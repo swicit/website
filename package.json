@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/swic-cis-177/js-student-boilerplate#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "eslint": "^6.2.2",
     "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-prettier": "^3.1.0",
-    "live-server": "^1.2.1",
     "prettier": "^1.18.2",
     "stylelint": "^10.1.0",
     "stylelint-config-prettier": "^5.2.0",
