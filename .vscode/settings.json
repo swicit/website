@@ -20,5 +20,8 @@
   "editor.fontLigatures": true,
   "better-comments.highlightPlainText": true,
   "eslint.autoFixOnSave": true,
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "cSpell.words": [
+    "SWIC"
+  ]
 }
