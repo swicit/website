@@ -13,7 +13,7 @@
   "files.trimTrailingWhitespace": true,
   "workbench.enableExperiments": false,
   "workbench.colorTheme": "Material",
-  "workbench.iconTheme": "vs-minimal",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.view.alwaysShowHeaderActions": true,
   "terminal.integrated.fontFamily": "'Inconsolata', monospace",
   "editor.fontFamily": "'Inconsolata', Menlo, Monaco, 'Courier New', monospace",
