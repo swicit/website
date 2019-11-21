@@ -1,3 +1,10 @@
+html {
+  --primary: #005DAA;
+  --secondary: #7AABFF;
+  --primary-accent: #D8A31A;
+  --secondary-accent: #644000
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
