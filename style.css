@@ -10,16 +10,37 @@ body {
   font-size: 10px;
 }
 
-header {
-  background: var(--primary);
-  color: white;
+header,
+form,
+section,
+footer {
   padding: 1rem;
+}
+
+header,
+section,
+footer {
   text-align: center;
+}
+
+header,
+footer,
+a {
+  color: white;
+}
+
+header,
+footer {
+  background: var(--primary);
+}
+
+h1,
+h2 {
+  margin: 0;
 }
 
 h1 {
   font-size: 4.209em;
-  margin: 0;
 }
 
 h2 {
@@ -31,4 +52,20 @@ label,
 p {
   font-size: 1.333em;
 }
+
+input {
+  border: solid thin black;
+}
+
+input[type="submit"] {
+  background: var(--secondary);
+  border-radius: 3px;
+  color: white;
+  padding: 0.5rem;
+}
+
+form div {
+  margin: 0.5rem 0;
+}
+
 
