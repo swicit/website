@@ -54,8 +54,13 @@ p {
   font-size: 1.333em;
 }
 
+label {
+  margin-right: 0.5rem;
+}
+
 input {
   border: solid thin black;
+  border-radius: 3px;
 }
 
 input[type="submit"] {
@@ -69,4 +74,15 @@ form div {
   margin: 0.5rem 0;
 }
 
+form .flex {
+  max-width: 226px;
+}
 
+/* Utility Classes */
+.flex {
+  display: flex;
+}
+
+.justify-content--space-around {
+  justify-content: space-between;
+}
