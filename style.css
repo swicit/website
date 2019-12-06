@@ -10,6 +10,10 @@ body {
   font-size: 10px;
 }
 
+img {
+  max-width: 100%;
+}
+
 header,
 form,
 section,
@@ -87,7 +91,7 @@ form .flex {
   display: flex;
 }
 
-.justify-content--space-around {
+.justify-content-space-around {
   justify-content: space-between;
 }
 
@@ -125,7 +129,14 @@ form .flex {
     display: flex;
   }
 
-  .justify-content--center {
+  .justify-content-center--md {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    margin: 0 auto;
+    max-width: 800px;
   }
 }
