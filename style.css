@@ -90,3 +90,42 @@ form .flex {
 .justify-content--space-around {
   justify-content: space-between;
 }
+
+@media screen and (min-width: 480px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 50fr);
+  }
+
+  section {
+    text-align: left;
+  }
+
+  /* Utility classes */
+  .flex--sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 100fr;
+    padding: 0 0.5rem;
+  }
+
+  section {
+    max-width: 90vw;
+  }
+
+  /* Utility Classes */
+  .flex--md {
+    display: flex;
+  }
+
+  .justify-content--center {
+    justify-content: center;
+  }
+}
