@@ -1,12 +1,12 @@
 html {
-  --primary: #005DAA;
-  --secondary: #7AABFF;
-  --primary-accent: #D8A31A;
-  --secondary-accent: #644000
+  --primary: #005daa;
+  --secondary: #7aabff;
+  --primary-accent: #d8a31a;
+  --secondary-accent: #644000;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 10px;
 }
 
