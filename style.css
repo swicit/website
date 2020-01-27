@@ -8,10 +8,21 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 10px;
+  font-family: Lora;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(motherboard.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 img {
   max-width: 100%;
+}
+
+form,
+section {
+  background-color: rgba(255, 255, 255, 0.856);
 }
 
 header,
@@ -100,11 +111,9 @@ form .flex {
     display: grid;
     grid-template-columns: repeat(2, 50fr);
   }
-
   section {
     text-align: left;
   }
-
   /* Utility classes */
   .flex--sm {
     display: flex;
@@ -119,16 +128,13 @@ form .flex {
     grid-template-columns: 100fr;
     padding: 0 0.5rem;
   }
-
   section {
     max-width: 90vw;
   }
-
   /* Utility Classes */
   .flex--md {
     display: flex;
   }
-
   .justify-content-center--md {
     justify-content: center;
   }
