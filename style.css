@@ -106,12 +106,21 @@ form .flex {
 
 /* Utility Classes */
 
+.center {
+    text-align: center;
+}
+
 .flex {
     display: flex;
 }
 
 .justify-content-space-around {
     justify-content: space-between;
+}
+
+.space {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 @media screen and (min-width: 480px) {
