@@ -23,5 +23,8 @@
   "files.eol": "\n",
   "cSpell.words": [
     "SWIC"
-  ]
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
