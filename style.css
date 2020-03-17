@@ -1,163 +1,162 @@
 html {
-    --primary: #005daa;
-    --secondary: #7aabff;
-    --primary-accent: #d8a31a;
-    --secondary-accent: #644000;
+  --primary: #005daa;
+  --secondary: #7aabff;
+  --primary-accent: #d8a31a;
+  --secondary-accent: #644000;
+  --default-spacing: 3rem;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    font-size: 10px;
-    font-family: Lora;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./img/motherboard.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-family: Lora;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(./img/motherboard.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 form,
 section {
-    background-color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(255, 255, 255, 0.856);
 }
 
 header,
 form,
 section,
 footer {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 header,
 section,
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 header,
 footer,
 a {
-    color: white;
+  color: white;
 }
 
 header,
 footer {
-    background: var(--primary);
+  background: var(--primary);
 }
 
 footer {
-    font-size: 1.5em;
-    text-align: center;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 h1,
 h2 {
-    margin: 0;
+  margin: 0;
 }
-
 
 /* https://type-scale.com/?size=10&scale=1.333&text=A%20Visual%20Type%20Scale&font=Roboto&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.45&backgroundcolor=white&fontcolor=%23333&preview=false */
 
 h1 {
-    font-size: 4.209em;
+  font-size: 4.209em;
 }
 
 h2 {
-    font-size: 3.157em;
+  font-size: 3.157em;
 }
 
 strong {
-    font-size: 1.777em;
+  font-size: 1.777em;
 }
 
 input,
 label,
 p {
-    font-size: 1.333em;
+  font-size: 1.333em;
 }
 
 label {
-    margin-right: 0.5rem;
-    display: flex;
-    align-items: center;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 input {
-    border: solid thin black;
-    border-radius: 3px;
+  border: solid thin black;
+  border-radius: 3px;
 }
 
 input[type="submit"] {
-    background: var(--secondary);
-    border-radius: 3px;
-    color: white;
-    padding: 0.5rem;
+  background: var(--secondary);
+  border-radius: 3px;
+  color: white;
+  padding: 0.5rem;
 }
 
 form div {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
 }
 
 form .flex {
-    max-width: 226px;
+  max-width: 226px;
 }
 
-
 /* Utility Classes */
-
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .justify-content-space-around {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .space {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  padding-top: var(--default-spacing);
+  padding-bottom: var(--default-spacing);
 }
 
 @media screen and (min-width: 480px) {
-    main {
-        display: grid;
-        grid-template-columns: repeat(2, 50fr);
-    }
-    section {
-        text-align: left;
-    }
-    /* Utility classes */
-    .flex--sm {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 50fr);
+  }
+  section {
+    text-align: left;
+  }
+  /* Utility classes */
+  .flex--sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    main {
-        grid-template-columns: 100fr;
-        padding: 0 0.5rem;
-    }
-    section {
-        max-width: 90vw;
-    }
-    /* Utility Classes */
-    .flex--md {
-        display: flex;
-    }
-    .justify-content-center--md {
-        justify-content: center;
-    }
+  main {
+    grid-template-columns: 100fr;
+    padding: 0 0.5rem;
+  }
+  section {
+    max-width: 90vw;
+  }
+  /* Utility Classes */
+  .flex--md {
+    display: flex;
+  }
+  .justify-content-center--md {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 800px) {
-    main {
-        margin: 0 auto;
-        max-width: 800px;
-    }
+  main {
+    margin: 0 auto;
+    max-width: 800px;
+  }
 }
