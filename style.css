@@ -79,7 +79,8 @@ main p:first-child {
 }
 
 form {
-  margin: 0 auto;
+  border-bottom: solid thin var(--secondary-accent);
+  margin: 0.5rem auto;
 }
 
 form div {
