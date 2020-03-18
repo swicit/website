@@ -64,7 +64,7 @@ footer {
 }
 
 header,
-section,
+main,
 footer {
   text-align: center;
 }
@@ -86,16 +86,18 @@ main p:first-child {
 
 form {
   margin: 0 auto;
-  width: 80vw;
 }
 
 form div {
-  margin: 0.5rem 0;
+  align-items: center;
+  margin: 0.5rem;
+  text-align: left;
 }
 
 label {
   margin-right: 0.5rem;
   white-space: nowrap;
+  width: 5rem;
 }
 
 input {
@@ -118,6 +120,14 @@ footer {
 
 .flex {
   display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 .justify-content-space-around {
@@ -145,15 +155,6 @@ footer {
 }
 
 @media screen and (min-width: 480px) {
-  main {
-    display: grid;
-    grid-template-columns: repeat(2, 50fr);
-  }
-
-  section {
-    text-align: left;
-  }
-
   /* 'flex--sm' just establishes a flexbox on 'small' screens. */
   .flex--sm {
     display: flex;
@@ -161,18 +162,13 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  main {
-    grid-template-columns: 100fr;
-    padding: 0 0.5rem;
-  }
-
-  section {
-    max-width: 90vw;
-  }
-
   /* Utility Classes */
   .flex--md {
     display: flex;
+  }
+
+  .align-content-center--md {
+    align-items: center;
   }
 
   .justify-content-center--md {
