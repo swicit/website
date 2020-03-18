@@ -21,7 +21,7 @@ img {
 
 form,
 section {
-    background-color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(255, 255, 255, 0.884);
 }
 
 header,
@@ -62,11 +62,13 @@ h2 {
 /* https://type-scale.com/?size=10&scale=1.333&text=A%20Visual%20Type%20Scale&font=Roboto&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.45&backgroundcolor=white&fontcolor=%23333&preview=false */
 
 h1 {
-    font-size: 4.209em;
+    font-size: 2.25em;
+    text-align: center;
 }
 
 h2 {
-    font-size: 3.157em;
+    font-size: 1.75em;
+    text-align: center;
 }
 
 strong {
@@ -76,7 +78,7 @@ strong {
 input,
 label,
 p {
-    font-size: 1.333em;
+    font-size: 1.5em;
 }
 
 label {
@@ -124,6 +126,8 @@ form .flex {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+
+.opener {}
 
 @media screen and (min-width: 480px) {
     main {
