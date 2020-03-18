@@ -57,15 +57,9 @@ main {
 }
 
 header,
-form,
-section,
-footer {
-  padding: 1rem;
-}
-
-header,
 main,
 footer {
+  padding: 1rem;
   text-align: center;
 }
 
