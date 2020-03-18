@@ -6,6 +6,8 @@ This repo includes opinionated settings and VS Code extensions. Both [ESLint](es
 
 ## Getting Started
 
+** After forking this repo to your GitHub...**
+
 1. `git clone` this repo.
    a. Click the green button on the GitHub page.
    b. Choose 'Use HTTPS' if it's not already selected.
@@ -22,3 +24,7 @@ P.S. The settings for VS Code are set to use ['Incosolata' font](https://fonts.g
 ## BrowserSync
 
 `npm run serve` should fire up a 'hot reloading' [BrowserSync](https://browsersync.io/) server.
+
+## Contributing
+
+_pull requests_ should only be made to the `dev` branch.
