@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en-us">
 
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <meta name="description"
+      content="Southwestern Illinois College Information Technology club for SWIC students and alumni">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 
@@ -14,74 +17,71 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
     <title>SWIC IT Club</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="./img/logo.jpg" height="150" width="300" alt="" />
+      <!-- For SEO, <h1> to match <title>. -->
+      <h1>
+        SWIC IT Club
+      </h1>
+      <img src="./img/logo.jpg" height="150" width="300"
+        alt="Southwestern Illinois College Information Technology club logo" />
     </header>
 
-    <main class="space">
-        <form name="contact" method="POST" data-netlify="true">
-            <div class="flex--md justify-content-space-around">
-                <div class="flex justify-content-space-around">
-                    <label for="fname">First Name:</label>
-                    <input type="text" id="fname" name="fname" />
-                </div>
-                <div class="flex justify-content-space-around">
-                    <label for="lname">Last Name:</label>
-                    <input type="text" id="lname" name="lname" />
-                </div>
-                <div class="flex justify-content-space-around">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" />
-                </div>
-            </div>
-            <div class="flex--md">
-                <input type="submit" value="Submit" />
-            </div>
-        </form>
+    <main>
+      <p>
+        Connect with us and explore technology! <del>We meet every Thursday on campus at 4pm in Room
+          2163.</del> Meetings are currently suspended.
+      </p>
 
-        <section>
-            <p class="center">
-                <strong>
-                Join us every Thursday at 4PM in Room 2163 to start developing valuable computer experience and expertise!
-                </strong>
-            </p>
-        </section>
+      <form name="contact" method="POST" data-netlify="true">
+          <div class="flex justify-content-space-around">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" />
+          </div>
 
-        <section>
-            <img src="./swicit.jpg" alt="SWIC IT Club Faculty and Students" />
+          <div class="flex justify-content-space-around">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" />
+          </div>
 
-<<<<<<< HEAD
-            <p>
-                SWIC IT Club offers experience with and exposure to various aspects of technology. This is valuable to everyone <em>no matter what</em> profession you are pursuing. You do not need to be going specifically for an IT degree to be a member
-                of SWIC IT Club.
-            </p>
-            <p><em>Oh yeah, and we give you 🍕 for showing up! 😋</em></p>
-        </section>
+          <div class="flex justify-content-space-around">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <input type="submit" value="Join" />
+      </form>
 
-        <!-- slideshow -->
-        <section class="center">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/rebR6TFAKto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-        </section>
-=======
+      <section>
+        <img src="./img/home.jpg" alt="SWIC IT Club Faculty and Students" />
+
         <p>
-          SWIC IT Club offers SWIC students and alumni experience with and
-          exposure to various aspects of technology. This is valuable
-          <em>no matter what</em> profession you are pursuing. You do not need
-          to be going specifically for an IT degree to be a member of SWIC IT
-          Club.
+          The mission of the SWIC IT Club is to implement an environment where students and alumni with varying levels of technology skills can work together to enhance their academic achievements and experience through volunteer services, activities, and partnerships
+          with local businesses.
         </p>
->>>>>>> 61b9263085677dffd06b4e639536722cfce82456
+
+        <p>
+          This is valuable <em>no matter what</em> profession you are pursuing. You do not need to be going specifically for an IT degree to be a member of SWIC IT Club.
+        </p>
+
+        <p><em>Oh yeah, and we give you 🍕 for showing up! 😋</em></p>
+
+        <!-- https://flaviocopes.com/responsive-youtube-videos/ -->
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/rebR6TFAKto" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+
 
     </main>
 
     <footer>
-        <a href="mailto:info@swicit.org">Email Us!</a>
+      <a href="mailto:info@swicit.org">Email Us!</a>
     </footer>
 
     <script src="scripts.js"></script>
-</body>
+  </body>
 
-</html>
+  </h1>

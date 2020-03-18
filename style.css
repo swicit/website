@@ -1,29 +1,59 @@
 html {
-  --primary: #005daa;
-  --secondary: #7aabff;
-  --primary-accent: #d8a31a;
-  --secondary-accent: #644000;
   --default-spacing: 3rem;
+  --primary-accent: #d8a31a;
+  --primary: #005daa;
+  --secondary-accent: #644000;
+  --secondary: #7aabff;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 10px;
-  font-family: Lora;
+  background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(./img/motherboard.jpg);
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25em;
+
+  /* (https://css-tricks.com/snippets/css/accessibilityseo-friendly-css-hiding/) */
+  left: -9999px;
+  position: absolute;
+  text-align: center;
+  top: -9999px;
+}
+
+h2 {
+  font-size: 1.75em;
+  text-align: center;
+}
+
+strong {
+  font-size: 1.777em;
+}
+
+input,
+label,
+p {
+  font-size: 1.5em;
 }
 
 img {
   max-width: 100%;
 }
 
-form,
-section {
-  background-color: rgba(255, 255, 255, 0.856);
+main {
+  background-color: rgba(255, 255, 255, 0.884);
+  padding: 1rem;
+  text-align: center;
 }
 
 header,
@@ -50,40 +80,22 @@ footer {
   background: var(--primary);
 }
 
-footer {
-  font-size: 1.5em;
-  text-align: center;
+main p:first-child {
+  font-weight: bold;
 }
 
-h1,
-h2 {
-  margin: 0;
+form {
+  margin: 0 auto;
+  width: 80vw;
 }
 
-/* https://type-scale.com/?size=10&scale=1.333&text=A%20Visual%20Type%20Scale&font=Roboto&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.45&backgroundcolor=white&fontcolor=%23333&preview=false */
-
-h1 {
-  font-size: 4.209em;
-}
-
-h2 {
-  font-size: 3.157em;
-}
-
-strong {
-  font-size: 1.777em;
-}
-
-input,
-label,
-p {
-  font-size: 1.333em;
+form div {
+  margin: 0.5rem 0;
 }
 
 label {
   margin-right: 0.5rem;
-  display: flex;
-  align-items: center;
+  white-space: nowrap;
 }
 
 input {
@@ -95,29 +107,41 @@ input[type="submit"] {
   background: var(--secondary);
   border-radius: 3px;
   color: white;
-  padding: 0.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
-form div {
-  margin: 0.5rem 0;
-}
-
-form .flex {
-  max-width: 226px;
-}
-
-/* Utility Classes */
-.center {
+footer {
+  font-size: 1.5em;
   text-align: center;
+}
+
+.flex {
+  display: flex;
 }
 
 .justify-content-space-around {
   justify-content: space-between;
 }
 
-.space {
-  padding-top: var(--default-spacing);
-  padding-bottom: var(--default-spacing);
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.video-container::after {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.video-container iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -125,15 +149,14 @@ form .flex {
     display: grid;
     grid-template-columns: repeat(2, 50fr);
   }
+
   section {
     text-align: left;
   }
-  /* Utility classes */
+
+  /* 'flex--sm' just establishes a flexbox on 'small' screens. */
   .flex--sm {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -142,13 +165,16 @@ form .flex {
     grid-template-columns: 100fr;
     padding: 0 0.5rem;
   }
+
   section {
     max-width: 90vw;
   }
+
   /* Utility Classes */
   .flex--md {
     display: flex;
   }
+
   .justify-content-center--md {
     justify-content: center;
   }
