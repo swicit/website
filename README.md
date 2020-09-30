@@ -1,10 +1,10 @@
-# SWIC IT Club Website
+# SWIC IT FAMILY Website
 
-## About
+## About this club
 
 This repo includes opinionated settings and VS Code extensions. Both [ESLint](eslint.org) and [Stylelint](stylelint.io.)
 
-## Getting Started
+## let's start and try to learn
 
 ** After forking this repo to your GitHub...**
 
@@ -17,7 +17,7 @@ This repo includes opinionated settings and VS Code extensions. Both [ESLint](es
    f. `cd` into the `clone`d diretory.
 2. `npm install`. This pulls in NodeJS packages that will provide some useful tooling to help us as we code. It will pull in packages that have been specified inside a special 'manifest' file in this directory called 'package.json'.
 3. `code .` This should fire up VS Code and start you off in your current directory.
-4. Watch in the bottom right of your screen. If it prompts you to install some extensions, do it!
+4. Watch in the bottom right of your screen ; If it prompts you to install some extensions, do it!
 
 P.S. The settings for VS Code are set to use ['Incosolata' font](https://fonts.google.com/specimen/Inconsolata?selection.family=Inconsolatad).
 
