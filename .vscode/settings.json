@@ -14,7 +14,6 @@
   "editor.suggest.preview": true,
   "editor.tabSize": 2,
   "editor.wordWrap": "wordWrapColumn",
-  "eslint.alwaysShowStatus": true,
   "files.autoSave": "onFocusChange",
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
