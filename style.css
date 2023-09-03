@@ -68,7 +68,7 @@ footer {
 header,
 footer,
 a {
-  color: white;
+  color: var(--secondary-accent);
 }
 
 header,
