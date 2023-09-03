@@ -2,7 +2,6 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "plievone.vscode-template-literal-editor",
     "streetsidesoftware.code-spell-checker",
     "tyriar.sort-lines"
   ]
